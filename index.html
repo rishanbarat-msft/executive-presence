@@ -42,6 +42,7 @@ html, body { height:100%; overflow:hidden; font-family: "Segoe UI", system-ui, s
 /* SHIMMER LINE */
 .shimmer-line { position:absolute; bottom:0; left:0; right:0; height:2px; background:linear-gradient(90deg, transparent, var(--accent1), var(--accent2), transparent); background-size:200% 100%; animation: shimmer 3s ease-in-out infinite; }
 @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+@keyframes panBg { 0%{transform:translate(0,0) scale(1.05)} 25%{transform:translate(-3%,-2%) scale(1.1)} 50%{transform:translate(2%,-3%) scale(1.08)} 75%{transform:translate(-2%,2%) scale(1.12)} 100%{transform:translate(3%,1%) scale(1.05)} }
 
 /* TYPOGRAPHY - BIGGER */
 .title-xl { font-size:4.2rem; font-weight:700; line-height:1.05; margin-bottom:1rem; letter-spacing:-0.02em; }
@@ -163,13 +164,17 @@ video { border-radius:16px; max-width:80%; max-height:60vh; margin-top:1rem; box
     <div class="tag animate-in">KEYNOTE &bull; INDUSTRY ATU</div>
     <h1 class="title-xl animate-in">Executive<br><span class="accent-text">Presence.</span></h1>
     <p class="subtitle animate-in">Communicating with purpose &amp; intention.</p>
+    <img src="ep.jpg" class="animate-in" style="margin-top:1.5rem;max-width:450px;width:80%;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.4);object-fit:contain;animation:panBg 15s ease-in-out infinite alternate;">
     <p class="meta animate-in">Rishan Barat &nbsp;|&nbsp; Sr. Director, Digital Sales &nbsp;|&nbsp; 2026</p>
     <div class="shimmer-line"></div>
 </div>
 
-<!-- SLIDE 1: IMAGE -->
+<!-- SLIDE 1: MY STORY -->
 <div class="slide">
-    <img src="slide2-img.png" style="max-width:90%;max-height:90vh;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.4);object-fit:contain;" class="animate-in">
+    <img src="slide2-img.png" style="position:absolute;inset:-5%;width:110%;height:110%;object-fit:contain;opacity:0.55;border-radius:0;box-shadow:none;animation:panBg 20s ease-in-out infinite alternate;">
+    <div class="chapter-label animate-in">ABOUT ME</div>
+    <h1 class="title-xl animate-in">My <span class="accent-text">Story.</span></h1>
+    <p class="subtitle animate-in" style="margin-top:1rem;">The experiences, lessons, and moments that shaped how I show up in the room today.</p>
 </div>
 
 <!-- SLIDE 2: AGENDA -->
@@ -375,10 +380,10 @@ video { border-radius:16px; max-width:80%; max-height:60vh; margin-top:1rem; box
     <div class="corner-accent br"></div>
     <div class="tag animate-in">HOW TO MAKE SURE THE CONVERSATION GOES SOMEWHERE</div>
     <div class="cards cards-2 stagger" style="margin-top:1rem;">
-        <div class="card"><div class="num accent-text">01</div><div class="card-title">SLOW DOWN</div><div class="card-desc">If you really want to highlight a point &mdash; slow down. Pace is a tool of emphasis.</div></div>
-        <div class="card"><div class="num accent2-text">02</div><div class="card-title">ASK THE SIMPLE QUESTION</div><div class="card-desc">A clean &ldquo;What will a great 60 minutes look like for you?&rdquo;</div></div>
+        <div class="card"><div class="num accent-text">01</div><div class="card-title">SHOW UP</div><div class="card-desc">What they see, is how they feel&hellip; SMILE</div></div>
+        <div class="card"><div class="num accent2-text">02</div><div class="card-title">ASK THE SIMPLE QUESTIONS</div><div class="card-desc">A clean &ldquo;What will a great 60 minutes look like for you?&rdquo;</div></div>
         <div class="card"><div class="num accent3-text">03</div><div class="card-title">EMBRACE THE QUIET</div><div class="card-desc">Silence is a tool. Pauses make people fill space with what they really think.</div></div>
-        <div class="card"><div class="num gold-text">04</div><div class="card-title">IMPROVISE</div><div class="card-desc">Walk in with an agenda &mdash; ask &ldquo;which item you would prefer to cover first?&rdquo;</div></div>
+        <div class="card"><div class="num gold-text">04</div><div class="card-title">IMPROVISE AND ADAPT</div><div class="card-desc">Walk in with an Agenda &mdash; ask &ldquo;which item you would prefer to cover first?&rdquo;</div></div>
     </div>
     <video controls style="max-width:45%; max-height:22vh; margin-top:1rem; box-shadow:0 4px 20px rgba(0,0,0,0.4);"><source src="adapt.mp4" type="video/mp4"></video>
     <div class="slide-quote">&ldquo;I do not think much of a man who is not wiser today than he was yesterday.&rdquo;<span class="quote-author">&mdash; Abraham Lincoln</span></div>
